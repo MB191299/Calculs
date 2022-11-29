@@ -30,13 +30,14 @@ namespace Calculs
                 Console.Write("Choix :                          ");
                 choix = Console.ReadLine();
 
-                val1 = rand.Next(1, 10);
-                val2 = rand.Next(1, 10);
+
                 // traitement des choix
                 switch (choix)
                 {
                     case "1": // addition
-                        // saisie de la réponse
+                              // saisie de la réponse
+                        val1 = rand.Next(1, 10);
+                        val2 = rand.Next(1, 10);
                         correct = false;
                         while (!correct)
                         {
@@ -63,7 +64,9 @@ namespace Calculs
                         }
                         break;
                     case "2": // multiplication
-                        // saisie de la réponse
+                              // saisie de la réponse
+                        val1 = rand.Next(1, 10);
+                        val2 = rand.Next(1, 10); 
                         correct = false;
                         while (!correct)
                         {
